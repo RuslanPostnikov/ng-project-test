@@ -9,14 +9,18 @@ import {CommonModule} from "@angular/common";
 import {HttpClientModule} from "@angular/common/http";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { HomePageComponent } from './pages/home-page/home-page.component';
-import { ProfilePageComponent } from './profile-page/profile-page.component';
+import { ProfilePageComponent } from './pages/profile-page/profile-page.component';
+import { GamesComponent } from './pages/games/games.component';
+import { GameComponent } from './pages/games/game/game.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginPageComponent,
     HomePageComponent,
-    ProfilePageComponent
+    ProfilePageComponent,
+    GamesComponent,
+    GameComponent
   ],
   imports: [
     BrowserModule,

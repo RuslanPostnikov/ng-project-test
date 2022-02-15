@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {FormControl, FormGroup, Validators} from "@angular/forms";
+import {FormControl, FormGroup, NgForm, Validators} from "@angular/forms";
+import {UserService} from "../../shared/user.service";
 
 @Component({
   selector: 'app-login-page',
@@ -12,7 +13,7 @@ export class LoginPageComponent implements OnInit {
 
   charsCount = 5;
 
-  constructor() { }
+  constructor(public userService: UserService) { }
 
   ngOnInit(): void {
     this.form = new FormGroup({
@@ -25,8 +26,9 @@ export class LoginPageComponent implements OnInit {
   }
 
 
-  onSubmit() {
-
+  onSubmit(email: any) {
+    console.log(email);
+    // this.userService.updateUserEmail(email)
   }
 
   checkLength(control: FormControl) {
