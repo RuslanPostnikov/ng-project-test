@@ -8,7 +8,7 @@ import {Component, Input, OnInit} from '@angular/core';
 export class GameComponent implements OnInit {
 
   @Input() name!: string;
-  @Input() price!: string;
+  @Input() price!: number;
   @Input() overview!: string;
 
   constructor() { }

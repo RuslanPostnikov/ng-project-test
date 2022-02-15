@@ -12,6 +12,7 @@ import { HomePageComponent } from './pages/home-page/home-page.component';
 import { ProfilePageComponent } from './pages/profile-page/profile-page.component';
 import { GamesComponent } from './pages/games/games.component';
 import { GameComponent } from './pages/games/game/game.component';
+import { LibraryPageComponent } from './pages/library-page/library-page.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { GameComponent } from './pages/games/game/game.component';
     HomePageComponent,
     ProfilePageComponent,
     GamesComponent,
-    GameComponent
+    GameComponent,
+    LibraryPageComponent
   ],
   imports: [
     BrowserModule,
